@@ -1347,3 +1347,161 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-05-19 21:27:20 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nathan/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 96ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-19 21:31:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-19 21:44:53 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/coins/2" for ::1 at 2020-05-19 21:44:55 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/coins/2" for ::1 at 2020-05-19 21:46:59 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coins/index" for ::1 at 2020-05-19 21:47:10 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:67
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Coin with 'id'=index):
+  
+app/controllers/coins_controller.rb:67:in `set_coin'
+Started GET "/coins" for ::1 at 2020-05-19 21:47:13 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-19 21:55:26 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-23 20:35:49 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nathan/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 94ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-24 14:05:56 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nathan/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 91ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:09:15 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:12:57 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:19:23 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:20:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-05-24 14:20:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-24 14:23:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:23:45 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (6.9ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.7ms)
+
+
