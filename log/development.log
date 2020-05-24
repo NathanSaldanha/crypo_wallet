@@ -1505,3 +1505,60 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/coins" for ::1 at 2020-05-24 14:49:00 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (6.2ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/coins/3" for ::1 at 2020-05-24 14:49:02 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+  Rendering coins/show.html.erb within layouts/adm
+  Rendered coins/show.html.erb within layouts/adm (1.1ms)
+Completed 200 OK in 39ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/coins/3" for ::1 at 2020-05-24 14:49:27 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCoin Load (0.5ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+  Rendering coins/show.html.erb within layouts/adm
+  Rendered coins/show.html.erb within layouts/adm (2.3ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:49:35 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (3.7ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coins/1" for ::1 at 2020-05-24 14:49:36 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+  Rendering coins/show.html.erb within layouts/adm
+  Rendered coins/show.html.erb within layouts/adm (0.8ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:50:10 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (4.8ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
