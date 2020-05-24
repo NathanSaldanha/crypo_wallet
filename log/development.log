@@ -1562,3 +1562,140 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
 
 
+Started DELETE "/coins/3" for ::1 at 2020-05-24 14:57:30 -0300
+Processing by CoinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i2zeYBcZ7ua2wAm9o/H5vTuvHfJhyN+8AvfhnVwpu77FFlie7UBtwR/SAbzGm1RCmY7B02j4Kbj9nVX66EfRUA==", "id"=>"3"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/coins_controller.rb:58
+  [1m[36mCoin Destroy (0.2ms)[0m  [1m[31mDELETE FROM "coins" WHERE "coins"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/coins_controller.rb:58
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/coins_controller.rb:58
+Redirected to http://localhost:3000/coins
+Completed 302 Found in 12ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 14:57:30 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (1.6ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:00:38 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (13.7ms)
+  Rendered coins/new.html.erb within layouts/adm (14.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    24:   <div class="field">
+    25:     <%= form.label :url_image %>
+    26:     <%= form.text_field :url_image %>
+    27:     <%= image_tag coin.url_image, size: "50x40" %>
+    28:   </div>
+    29: 
+    30:   <div class="actions">
+  
+app/views/coins/_form.html.erb:27:in `block in _app_views_coins__form_html_erb___1462263738601547449_69919854655580'
+app/views/coins/_form.html.erb:1:in `_app_views_coins__form_html_erb___1462263738601547449_69919854655580'
+app/views/coins/new.html.erb:3:in `_app_views_coins_new_html_erb__3255667067040497568_69919854648480'
+Started GET "/coins/new" for ::1 at 2020-05-24 15:01:52 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (3.5ms)
+  Rendered coins/new.html.erb within layouts/adm (5.1ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:14:42 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (3.6ms)
+  Rendered coins/new.html.erb within layouts/adm (5.5ms)
+Completed 200 OK in 29ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:14:43 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (5.5ms)
+  Rendered coins/new.html.erb within layouts/adm (8.3ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:14:53 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (4.5ms)
+  Rendered coins/new.html.erb within layouts/adm (6.8ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:14:54 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (3.5ms)
+  Rendered coins/new.html.erb within layouts/adm (4.8ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for ::1 at 2020-05-24 15:14:56 -0300
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (2.4ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coins/new" for ::1 at 2020-05-24 15:14:58 -0300
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (3.6ms)
+  Rendered coins/new.html.erb within layouts/adm (5.0ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coins" for ::1 at 2020-05-24 15:16:06 -0300
+Processing by CoinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"atUAKTwFlR1qjaA78u6HvF5/EoWVaP+na1zUpjOmtGezVSTMrA41YIrIIrAuEb+O/E+HlhQJGji9pV9KpzpqKg==", "coin"=>{"description"=>"Dash", "acronym"=>"DASH", "url_image"=>"https://w7.pngwing.com/pngs/932/233/png-transparent-ethereum-blockchain-bitcoin-logo-bitcoin-angle-triangle-logo.png"}, "commit"=>"Create Coin"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/coins_controller.rb:31
+  [1m[36mCoin Create (0.3ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Dash"], ["acronym", "DASH"], ["url_image", "https://w7.pngwing.com/pngs/932/233/png-transparent-ethereum-blockchain-bitcoin-logo-bitcoin-angle-triangle-logo.png"], ["created_at", "2020-05-24 18:16:06.566335"], ["updated_at", "2020-05-24 18:16:06.566335"]]
+  ↳ app/controllers/coins_controller.rb:31
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/coins_controller.rb:31
+Redirected to http://localhost:3000/coins/4
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/coins/4" for ::1 at 2020-05-24 15:16:06 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+  Rendering coins/show.html.erb within layouts/adm
+  Rendered coins/show.html.erb within layouts/adm (0.8ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coins/create" for 127.0.0.1 at 2020-05-24 15:19:11 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Coin with 'id'=create):
+  
+app/controllers/coins_controller.rb:68:in `set_coin'
